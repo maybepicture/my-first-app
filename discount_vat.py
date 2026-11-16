@@ -5,7 +5,7 @@ discount = st.number_input("กรอกส่วนลด", min_value=0.0, max_
 discount_price = price * discount/100
 vat = price * 0.07
 net_price = price - discount_price + vat
-st.header(f"• ส่วนลด ({discount}): -{discount_price:.2f} บาท")
+st.header(f"• ส่วนลด ({discount}%): -{discount_price:.2f} บาท")
 st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **+{vat:.2f}** บาท")
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 st.divider()
