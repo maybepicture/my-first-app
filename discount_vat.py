@@ -4,7 +4,7 @@ price = st.number_input("กรอกราคาสินค้า (บาท):
 discount = st.number_input("กรอกส่วนลด", min_value=0.0, max_value=100.0, value=0.0)
 discount_price = price * discount/100
 vat = price * 0.07
-net_price = price + vat
+net_price = discount_price + vat
 st.header(f"• ส่วนลด ({discount}): -{discount_price:.2f} บาท")
 st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **+{vat:.2f}** บาท")
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
