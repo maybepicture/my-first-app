@@ -1,2 +1,2 @@
 import straemlit as st
-st.input_number
+user_high = st.number_input(
