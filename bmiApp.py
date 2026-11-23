@@ -4,7 +4,7 @@ user_height = st.number_input("กรอกส่วนสูง (เซนต�
 user_weigth = st.number_input("กรอกน้ำหนัก (กิโลกรัม)", min_value = 0.00 , value = 0.00)
 if st.button("คำนวณค่า bmi"):
   height_m = user_height/100
-  bmi = user_weight/(height_m**2)
+  bmi = user_weigth/(height_m**2)
 if bmi < 18.5:
   st.warning("คุณมีน้ำหนักน้อยกว่าเกณฑ์ (ผอม)")
 elif 18.5 <= bmi < 23.0:
