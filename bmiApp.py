@@ -17,4 +17,4 @@ else:
 
 
 
-st.header(f"(ค่า bmi ของคุณคือ: **(bmi:.2f)**) 
+st.header(f"(ค่า bmi ของคุณคือ: **(bmi:.2f)**") 
