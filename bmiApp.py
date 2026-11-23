@@ -5,6 +5,8 @@ user_weigth = st.number_input("กรอกน้ำหนัก (กิโล�
 if st.button("คำนวณค่า bmi"):
   height_m = user_height / 100
   bmi = user_weigth / (height_m ** 2)
+  st.write("---")
+  st.header(f"(ค่า bmi ของคุณคือ: **(bmi:.2f)**") 
 if bmi < 18.5:
   st.warning("คุณมีน้ำหนักน้อยกว่าเกณฑ์ (ผอม)")
 elif 18.5 <= bmi < 23.0:
@@ -14,7 +16,3 @@ elif 23.0 <= bmi < 25.0:
 else:
   st.error("คุณอยู่ในเกณฑ์อ้วน ควรระวังเรื่องสุขภาพและออกกำลังกาย")
 
-
-
-
-st.header(f"(ค่า bmi ของคุณคือ: **(bmi:.2f)**") 
